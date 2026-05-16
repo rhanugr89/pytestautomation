@@ -74,14 +74,13 @@ class TestLogin:
         assert order_id == expected_id, f"Expected and Actual is not matching with {order_id} and actual {expected_id}"
         print("history --------------------------------",history)
         # thanks_text = self.driver.find_element(By.CSS_SELECTOR,"[class='hero-primary']").text.strip()
-        # print("Got thank you Text",thanks_text)
-        # expected_text = "Thankyou for the order.".capitalize()
+       # expected_text = "Thankyou for the order.".capitalize()
         # assert thanks_text == expected_text
         product_title = self.driver.find_element(By.CSS_SELECTOR,"div.title").text.strip()
         print("Product Title>>",product_title)
         assert  product_to_buy == product_title
         print("ALL DONE")
-        
+
         
 
 
